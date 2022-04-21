@@ -1,2 +1,4 @@
 # FirstWebSite
-Esta es un proyecto de copiado de una pagina web, con un mockup Ev2 Front end
+Este es un proyecto en el que realizamos un clonado de un sitio web entregado por el profesor
+
+Ev2 - Front End
