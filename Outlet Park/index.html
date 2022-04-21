@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cambiamos el titulo de la pagina (Lo que aparece en la pestaña) -->
+    <title>Viña Outlet Park</title>
+    <!-- Para poner el icono en la pestaña -->
+    <link rel="icon" href="./Images/logo.png">
+    <!-- Lo vinculamos con la hoja de estilos -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="logo"> <!-- Abrimos un div, para trabajr en un bloque de contenido -->
+            <!-- Para hacer un texto con un vinculo a nada (href) -->
+            <a href="index.html"> <img src="./Images/logo.png" id="logo" width="100%"> </a>
+        </div>
+        <div class="menu">
+            <nav> <!-- Con el nav, trabajamos con la barra de menu -->
+                <!-- Hacemos <a> para poder hacer elementos clicleables -->
+                <a href="#tienda" class="nav-link"><img src="./Images/tienda.ico"> Tiendas</a>
+                <a href="#panoramas" class="nav-link"><img src="./Images/panorama.ico">Panoramas</a>
+                <a href="#ubicaciones" class="nav-link"><img src="./Images/ubicacion.ico"> Ubicación</a>        
+            </nav>
+        </div>
+    </header>
+    <div class="fakeSlider">
+        <!-- Insertamos una imagen <img> con tamaño del 100% de la pagina -->
+        <img id="fakeSlider" src="./Images/fakeSlider.jpg" width="100%">
+    </div>
+    <div class="contenedor" id="tienda">
+        <div class="tiendatext">
+            <!-- <h3> es para poner un titulo, h1 el más grande, h6 más pequeño.. -->
+            <h3>TIENDAS</h3>
+        </div>
+        <div class="tiendacategory">
+            <img src="./Images/tienda1.jpg">
+            <img src="./Images/tienda2.jpg">
+            <img src="./Images/tienda3.jpg">
+            <img src="./Images/tienda4.jpg">
+        </div>
+    </div>
+    <div class="contenedor1" id="panoramas"> <!-- En este caso, las clases y los id, se definen para poder hacerles referencia, ya sea en el css o en un href con #id -->
+        <div class="panoramatext">
+            <h3>PANORAMAS</h3>
+        </div>
+        <div class="panoramacategory">
+            <img src="./Images/pano1.jpg">
+            <img src="./Images/pano2.jpg">
+            <img src="./Images/pano3.jpg">
+            <img src="./Images/pano4.jpg">
+            <img src="./Images/pano5.jpg">
+            <img src="./Images/pano6.jpg">
+            <img src="./Images/pano7.jpg">
+        </div>
+        <div class="ubicaciontext">
+            <h3> UBICACIÓN DE LAS TIENDAS</h3>
+        </div>
+    </div>
+    <div class="contenedor2" id="ubicaciones">
+        <div class="mapa">
+            <img src="./Images/mapa.jpg">
+        </div>
+    </div>
+    <div class="contenedor3">
+        <div class="locomocion">
+            <h2>LOCOMOCIÓN</h2>
+        </div>
+        <div class="contenedor4">
+            <img src="./Images/ubi1.png">
+            <img src="./Images/ubi2.png">
+            <img src="./Images/ubi3.png">
+            <img src="./Images/ubi4.png">
+        </div>
+        <div class="contenedor5">
+            <div>
+                <h3>DIRECCIÓN</h3>
+                <!-- Insertamos un frame de googlemaps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13386.779508082554!2d-71.499133!3d-32.985451!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689dc684599dc21%3A0x188987bc098a2a37!2sCam.%20Internacional%202440%2C%20Vi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso%2C%20Chile!5e0!3m2!1ses-419!2sus!4v1650423089563!5m2!1ses-419!2sus" width="435" height="90" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <h3>HORARIO</h3>
+                <ul> <!-- Hacemos una lista no ordenada (unordered list) -->
+                    <li><h5>LUNES A DOMINGO</h5>
+                        <p>de 10:00 a 20:00 hrs.</p></li>  <!-- Con la etiqueta <li> hacemos cada fila -->
+                    <li><p>GRATIS los primeros 30 minutos</p> <!-- el <p> es para aplicar parrafos -->
+                        <p>Cada ½ hora = $500 pesos</p>
+                        <p>Tarifa máxima = $3.500 pesos</p></li>
+                </ul>
+            </div>
+            <div>
+                <h3>CONTACTO</h3>
+                <ul class="listaContacto">
+                <!-- dentro de la columna tenemos un <a> que hace que el elemento sea clickeable, dentro de eso tiene un <img> que failita poner imagenes con el src (en el cual se adjunta la ubicacion del archivo), el alt es para cuando por algún motivo la imagen falla, muestra el texto en remplazo, luego tenemos el width="15px" height="15px" que es para controlar el tamaño de la imagen -->
+                <li> <a href="#"><img src="./Images/correo.png" alt="correo" width="15px" height="15px">novedades@outletpark.cl</a></li>
+                <li> <a href="#"><img src="./Images/telefono.png" alt="telefono" width="15px" height="15px">32 251 4100</a></li>
+                <li> <a href="#"><img src="./Images/bandejaRobada.png" alt="bandeja" width="15px" height="15px">Enviar mensaje</a></li>
+                </ul>
+            </div>
+            <p class="final">©️ 2020 Viña Outlet Park – Todos los derechos reservados. Diseñado por WORKLab</p> 
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<!-- No le comenté todo el codigo, xq muchas cosas se repetian, y se entiende que es lo mismo -->

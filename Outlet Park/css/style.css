@@ -1,0 +1,127 @@
+/* Con el * le damos un estilo general a toda la pagina */
+* { /* Hacemos que la pagina no tenga "Borde" */
+    margin: 0%; 
+    padding: 0%;
+}
+body{
+  font-family: sans-serif; /* Le cambiamos la fuente */
+}
+a{
+  text-decoration: none; /* Con esto hacemos que los elementos clickeables no tengan la barra inferior */
+  color: #1f2242; /* Le cambiamos el color a la fuente */
+}
+header{
+  display: flex; /* La distribución del espacio se hace flexible */
+  position: fixed;  /* Con esto hacemos que se quede siempre en la parte superior */
+  height: 80px; /* Ajustamos la altura */
+  width: 100%; /* Ajustamos el ancho */
+  background-color: whitesmoke; /* Le cambiamos el color del fondo */
+  align-items: center; /* Aliniamos al centro */
+}
+
+#logo {
+    width: 70px; /* Le damos un ancho de 70px */
+    margin: 3px; /* Le damos un margen de 3px */
+    padding: 3px;  /* Padding de 3px */
+    margin-left: 100px; /* Le ponemos margen a la izquierda, para que tenga un leve espaciado */
+  }
+nav a {
+  font-weight: 1000; /* Es para hacerla más Bold (Negrita) */
+  font-size: 20px; /* Le ajustamos el tamaño de la fuente a 20px */
+  margin: 0 5px; /* Le da un margen de 5 pixeles horizontalmente a cada lado */
+  padding-left: 120px; /* Le ponemos padding a la izquierda, para que tenga un leve espaciado */
+}
+nav a:hover {
+  color: #948abc; /* Cuuando el cursor pasa por encima de el menu, cambia de color */
+}
+.contenedor{
+  margin-top: 25px; /* Con margin top separamos hacia arriba */
+  background-color: #f5edff;
+  height: 60vh;
+}
+.tiendatext{
+  margin: 0 50px;
+  padding-top: 30px; /* Le hacemos una separación de 30px hacia arriba */
+  padding-bottom: 30px; /* Le hacemos una separación de 30px hacia abajo */
+}
+.tiendacategory {
+  margin: 0 10px;
+  padding-left: 5px; /* Le hacemos una separación de 5px hacia la izquiera */
+}
+
+.contenedor1{
+  background-color: #f5edff;
+  height: 120vh;
+}
+.panoramatext{
+  margin: 0 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.panoramacategory img {
+  margin: 0 1px;
+}
+.ubicaciontext {
+  padding-top: 50px;
+  margin: 0 50px;
+}
+.contenedor2{
+  background-color: #f5edff;
+  height: 100vh;
+}
+.mapa img {
+  margin: 0 10px;
+}
+
+.contenedor3{
+  background-color: #3a328a;
+  height: 85vh;
+}
+
+.locomocion h2{
+  color: azure;
+  margin: 0 43%;
+  padding: 30px;
+}
+.contenedor4{
+  display: flex;
+  justify-content: space-around; /* Usa espaciado automatico */
+  width: 100%;
+  flex-wrap: wrap; /* Le da un espacio en ambos lados */
+  max-width: 10000px;
+  margin: auto;
+}
+.contenedor4 img {
+  width: 290px;
+  height: 80px;
+}
+.contenedor5{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center; /* Centramos todos los elementos */
+  margin-top: 50px;
+}
+.contenedor5 h3{
+  color: azure;
+}
+.contenedor5 p{
+  color: azure;
+}
+.contenedor5 a{
+  color: azure;
+}
+.contenedor5 h5{
+  color: azure;
+}
+.listaContacto{
+  list-style:none;
+}
+li{
+  color: azure;
+}
+.final{
+  margin-top: 150px;
+}
